@@ -1,0 +1,276 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>DORAEMON UNBAN CONSOLE</title>  
+    <style>  
+        * {  
+            box-sizing: border-box;  
+            margin: 0;  
+            padding: 0;  
+            font-family: 'Courier New', Courier, monospace;  
+        }  body {  
+        background-color: #050505;  
+        color: #ff0033;  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        min-height: 100vh;  
+        padding: 15px;  
+    }  
+
+    .container {  
+        width: 100%;  
+        max-width: 420px;  
+        background: #0d0204;  
+        border: 2px solid #ff0033;  
+        border-radius: 12px;  
+        padding: 20px;  
+        box-shadow: 0 0 20px rgba(255, 0, 51, 0.4);  
+        position: relative;  
+    }  
+
+    .header-info {  
+        font-size: 10px;  
+        text-align: center;  
+        color: #88001b;  
+        margin-bottom: 10px;  
+        letter-spacing: 1px;  
+    }  
+
+    .tag {  
+        border: 1px solid #ff0033;  
+        display: inline-block;  
+        padding: 2px 8px;  
+        font-size: 11px;  
+        margin-bottom: 10px;  
+        color: #ff0033;  
+    }  
+
+    h1 {  
+        text-align: center;  
+        font-size: 22px;  
+        color: #ffffff;  
+        text-shadow: 0 0 10px #ff0033;  
+        margin-bottom: 15px;  
+        letter-spacing: 2px;  
+    }  
+
+    .status-box {  
+        display: flex;  
+        justify-content: space-between;  
+        font-size: 10px;  
+        border-top: 1px dashed #ff0033;  
+        border-bottom: 1px dashed #ff0033;  
+        padding: 8px 0;  
+        margin-bottom: 20px;  
+        color: #00ff66;  
+    }  
+
+    .section-title {  
+        font-size: 13px;  
+        color: #ffffff;  
+        margin-bottom: 10px;  
+        font-weight: bold;  
+    }  
+
+    .input-box {  
+        width: 100%;  
+        background: #1a0005;  
+        border: 1px solid #ff0033;  
+        color: #00ff66;  
+        padding: 12px;  
+        font-size: 14px;  
+        border-radius: 5px;  
+        outline: none;  
+        margin-bottom: 20px;  
+        letter-spacing: 2px;  
+    }  
+
+    .options {  
+        display: flex;  
+        gap: 8px;  
+        margin-bottom: 25px;  
+    }  
+
+    .opt-btn {  
+        flex: 1;  
+        background: #1a0005;  
+        border: 1px solid #ff0033;  
+        color: #ffffff;  
+        padding: 10px 5px;  
+        font-size: 11px;  
+        font-weight: bold;  
+        cursor: pointer;  
+        border-radius: 4px;  
+        text-align: center;  
+    }  
+
+    .opt-btn.active {  
+        background: #ff0033;  
+        color: #ffffff;  
+        box-shadow: 0 0 10px #ff0033;  
+    }  
+
+    .submit-btn {  
+        width: 100%;  
+        background: linear-gradient(90deg, #b30024, #ff0033);  
+        border: none;  
+        color: #ffffff;  
+        padding: 15px;  
+        font-size: 16px;  
+        font-weight: bold;  
+        letter-spacing: 2px;  
+        cursor: pointer;  
+        border-radius: 5px;  
+        box-shadow: 0 0 15px rgba(255, 0, 51, 0.6);  
+    }  
+
+    .submit-btn:hover {  
+        background: #ff0033;  
+    }  
+
+    /* Success Popup Modal */  
+    .modal {  
+        display: none;  
+        position: fixed;  
+        top: 0; left: 0;  
+        width: 100%; height: 100%;  
+        background: rgba(0,0,0,0.9);  
+        justify-content: center;  
+        align-items: center;  
+        padding: 15px;  
+    }  
+
+    .modal-content {  
+        background: #020d05;  
+        border: 2px solid #00ff66;  
+        border-radius: 12px;  
+        padding: 20px;  
+        width: 100%;  
+        max-width: 400px;  
+        text-align: center;  
+        box-shadow: 0 0 25px rgba(0, 255, 102, 0.4);  
+        color: #00ff66;  
+    }  
+
+    .checkmark {  
+        width: 50px;  
+        height: 50px;  
+        border: 2px solid #00ff66;  
+        border-radius: 50%;  
+        display: flex;  
+        align-items: center;  
+        justify-content: center;  
+        margin: 0 auto 15px;  
+        font-size: 24px;  
+        box-shadow: 0 0 10px #00ff66;  
+    }  
+
+    .modal h2 {  
+        color: #ffffff;  
+        font-size: 18px;  
+        margin-bottom: 15px;  
+        letter-spacing: 1px;  
+    }  
+
+    .console-logs {  
+        background: #001a0a;  
+        border: 1px solid #00ff66;  
+        padding: 12px;  
+        font-size: 11px;  
+        text-align: left;  
+        margin-bottom: 20px;  
+        line-height: 1.6;  
+    }  
+
+    .close-btn {  
+        width: 100%;  
+        background: #00ff66;  
+        color: #000;  
+        border: none;  
+        padding: 12px;  
+        font-weight: bold;  
+        cursor: pointer;  
+        border-radius: 5px;  
+    }  
+</style>
+
+</head>  
+<body>  <div class="container">  
+    <div class="header-info">// SYSTEM STATUS // PROCESSOR CORE-7 // IP: 152.59.154.226</div>  
+    <center><div class="tag">GARENA OVERRIDE PROTOCOL</div></center>  
+    <h1>DORAEMON UNBAN</h1>  
+      
+    <div class="status-box">  
+        <span>GARENA SERVER: CONNECTED</span>  
+        <span>CLEARANCE: AUTHORIZED_ADMIN</span>  
+    </div>  
+
+    <div class="section-title">ENTER YOUR ID (11 DIGIT)</div>  
+    <input type="text" id="uidInput" class="input-box" placeholder="ENTER 11 DIGIT FREE FIRE UID" maxlength="11">  
+
+    <div class="section-title">SELECT UNBAN DURATION:</div>  
+    <div class="options">  
+        <div class="opt-btn" onclick="selectOpt(this, 'PERMANENT')">PERMANENT</div>  
+        <div class="opt-btn" onclick="selectOpt(this, '30 DAYS')">30 DAYS</div>  
+        <div class="opt-btn active" onclick="selectOpt(this, '7 DAYS')">7 DAYS</div>  
+    </div>  
+
+    <button class="submit-btn" onclick="processUnban()">⚡ UNBAN NOW</button>  
+</div>  
+
+<!-- Success Modal Screen -->  
+<div class="modal" id="successModal">  
+    <div class="modal-content">  
+        <div class="checkmark">✓</div>  
+        <div>OVERRIDE CONFIRMED // GARENA SERVER</div>  
+        <h2>YOUR ID UNBAN SUCCESSFUL</h2>  
+
+        <div class="console-logs">  
+            TARGET UID: <span id="resUid" style="color:#fff;">-</span><br>  
+            UNBAN DURATION: <span id="resDuration" style="color:#fff;">7 DAYS</span><br>  
+            CLIENT IP: 152.59.154.226<br>  
+            SERVER STATUS: <span style="color:#00ff66;">ACCOUNT UNBANNED [ACTIVE]</span><br>  
+            MODIFIER: DORAEMON CORE v9.4<br>  
+            TIME STAMP: <span id="resTime"></span>  
+            <br><br>  
+            > GARENA FREE FIRE DATABASE SUCCESSFULLY UPDATED. YOUR ID IS NOW UNBANNED.  
+        </div>  
+
+        <button class="close-btn" onclick="closeModal()">OK / CLOSE CONSOLE</button>  
+    </div>  
+</div>  
+
+<script>  
+    let selectedDuration = "7 DAYS";  
+
+    function selectOpt(element, duration) {  
+        document.querySelectorAll('.opt-btn').forEach(btn => btn.classList.remove('active'));  
+        element.classList.add('active');  
+        selectedDuration = duration;  
+    }  
+
+    function processUnban() {  
+        const uid = document.getElementById('uidInput').value;  
+        if(uid.length < 8) {  
+            alert("Kripya sahi Free Fire UID enter karein!");  
+            return;  
+        }  
+
+        document.getElementById('resUid').innerText = uid;  
+        document.getElementById('resDuration').innerText = selectedDuration;  
+          
+        const now = new Date();  
+        document.getElementById('resTime').innerText = now.toISOString().replace('T', ' ').substring(0, 19) + " UTC";  
+
+        document.getElementById('successModal').style.display = 'flex';  
+    }  
+
+    function closeModal() {  
+        document.getElementById('successModal').style.display = 'none';  
+    }  
+</script>
+
+</body>  
+</html>  
